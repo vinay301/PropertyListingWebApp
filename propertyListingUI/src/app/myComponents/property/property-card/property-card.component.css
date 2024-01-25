@@ -1,0 +1,85 @@
+.btn{
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    /* font-size: 5px; */
+    text-align: center;
+    color: whitesmoke;
+    background-color: #00246D;
+    border: none;
+    border-radius: .4rem;
+    transition: .2s;
+    cursor: pointer;
+    
+}
+
+.btn span{
+        margin-left: .3rem;
+        transition: .2s;
+}
+
+.btn:hover, .btn:active{
+    background-color:#02386E;
+    opacity: 2;
+    transform: translateY(-2px);
+}
+
+.card{
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1) !important;
+}
+.card-body h1{
+    color:#02386E;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-img-wrapper{
+    overflow: hidden;
+    position: relative;
+    margin-top: 5px;
+  }
+.card:hover img{
+    transform: scale(1.1,1.1);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    height: 150px;
+    opacity: .7;
+  }
+  
+  .card img{
+    transform: scale(1,1);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    height: 150px
+  } 
+
+.member-icons{
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0;
+}
+  
+.card-img-wrapper:hover .member-icons{
+    bottom: 0;
+    opacity: 1;
+}
+  
+.animate{
+    transition: all 0.3s ease-in-out;
+}
+
+.text{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: darken(#404040, 1%);
+    margin-bottom: .5rem;
+}
+
+.font-highlight {
+    color:#00246D;
+    font-style: italic;
+   
+}

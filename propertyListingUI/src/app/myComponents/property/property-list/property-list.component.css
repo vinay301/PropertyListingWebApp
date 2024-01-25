@@ -1,0 +1,38 @@
+.homePagination{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding: 20px;
+border-radius: 8px;
+column-gap: 12px;
+}
+
+::ng-deep{
+    .ngx-pagination li
+    {
+        height: 45px;
+        width: 45px;
+        font-size: 20px;
+        color: #666666;
+        background-color: #f2f2f2;
+        border-radius: 6px !important;
+        cursor: pointer;
+    }
+}
+
+.property-card{
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+   
+}
+
+.heading h1{
+    
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}

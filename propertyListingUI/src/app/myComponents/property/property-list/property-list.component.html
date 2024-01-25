@@ -1,0 +1,17 @@
+<div class="property-card">
+    <div class="container heading text-center pt-4">
+        <h1 class="text-center font-weight-bold">Our Hot Properties</h1>
+    </div> 
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let property of propertyArray | filter : searchCity : 'city' | sort : [sortByParam,sortDirection] | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="col-lg-3">
+                <app-property-card [property] = "property"></app-property-card>
+            </div>
+            <div class="homePagination">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+              </div>
+        </div>
+    </div>
+</div>
+
+

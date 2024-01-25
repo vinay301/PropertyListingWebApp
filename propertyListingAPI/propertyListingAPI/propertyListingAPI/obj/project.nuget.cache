@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "eaqlNjSgt/7WDdrrfHagWIcPRJWwjAYCEl1+4CVMbirKSD9gzvKn0m1qX/e4FtvUFSKUS0LKa1EcD16YusUuAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vinaysharma04\\OneDrive - Nagarro\\Desktop\\PersonalProjects\\PropertyListingWebApp\\propertyListingAPI\\propertyListingAPI\\propertyListingAPI\\propertyListingAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vinaysharma04\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\vinaysharma04\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\vinaysharma04\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\vinaysharma04\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\vinaysharma04\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\vinaysharma04\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

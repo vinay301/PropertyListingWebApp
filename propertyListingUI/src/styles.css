@@ -1,0 +1,28 @@
+/* importing "alertify.js" css from node modules */
+@import '../node_modules/alertifyjs/build/css/alertify.min.css';
+@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+
+/*importing forms.css to the global stylesheet*/
+@import 'assets/forms.css';
+
+/*importing tabs.css to the global stylesheet*/
+@import 'assets/tabs.css';
+
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+ html,body{
+  
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+} 
+body::-webkit-scrollbar{
+    display:none;
+    width: 100%;
+}
+

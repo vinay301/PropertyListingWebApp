@@ -1,0 +1,613 @@
+<!-- <p>
+  property-details works!
+  selected property {{propertyId}}
+
+  <br>
+  <button (click) ="onSelectNext()" class="btn btn-primary">Select Next Page</button>
+
+  <br>
+  <button routerLink ="/property-details/1" class="btn btn-primary">1</button>
+  <button routerLink ="/property-details/2" class="btn btn-primary">2</button>
+  <button routerLink ="/property-details/3" class="btn btn-primary">3</button>
+</p> -->
+
+<!-- <div class="container">
+<div class="row shadow">
+  <div class="col-sm-4 p-0">
+     <div class="card">
+      <div class="card-img-wrapper">
+        <img *ngIf="property.image" class="card-img-top" src="assets/images/{{property.image}}.jpg">
+        <img *ngIf="!property.image" class="card-img-top" src="assets/images/house_default.jpg">
+      </div>
+      <div class="card-body">
+        <h1 class="card-title">{{property.name}}</h1>
+        <div>
+            <strong>{{property.bhk}} BHK {{property.propType}} @ ${{property.price}}</strong>
+        </div>
+        <div>
+           <strong>in {{property.city}}</strong>
+        </div> <hr>
+        <div>
+            <strong>Build Area: </strong>
+            {{property.builtArea}} Sqft
+        </div>
+
+        <div>
+            <strong>Carpet Area: </strong>
+            {{property.carpetArea}} Sqft
+        </div>
+        <div>
+            <strong>Furnishing Type: </strong>
+            {{property.furnishType}}
+        </div>
+      </div>
+      <div class="card-footer mb-0">
+        <div class="btn-group d-flex">
+          <button class="btn btn-primary">Like</button>
+          <button class="btn btn-success">Message</button>
+        </div>
+      </div>
+  </div> 
+
+ 
+  
+  </div>
+  <div class="col-sm-8 p-0">
+    <div class="tab-panel">
+      <tabset class="member-tabset" type="pills">
+        <tab heading="Overview">
+          <h1>Overview</h1>
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="heading">
+                      <strong>Project Name</strong>
+                      <p>{{property.name}}</p>
+                  </div>
+
+                  <div class="heading">
+                      <strong>Floor Number</strong>
+                      <p>{{property.floorNo}}</p>
+                  </div>
+
+                  <div class="heading">
+                      <strong>Age of Property</strong>
+                      <p>{{property.AOP}}</p>
+                  </div>
+
+                  <div class="heading">
+                      <strong>Posession</strong>
+                      <p>{{property.possessionOn}}</p>
+                  </div>
+              </div>
+
+              <div class="col-sm-6">
+                  <div class="heading">
+                      <strong>Main Entrance</strong>
+                      <p>{{property.mainEntrance}}</p>
+                  </div>
+
+                  <div class="heading">
+                      <strong>Gated Community</strong>
+                      <p>{{property.gated}}</p>
+                  </div>
+
+                  <div class="heading">
+                      <strong>Security Deposit</strong>
+                      <p>{{property.security}}</p>
+                  </div>
+                  <div class="heading">
+                      <strong>Maintenance</strong>
+                      <p>{{property.maintenance}}</p>
+                  </div>
+              </div>
+              <div class="col-sm-12">
+                  <div class="heading">
+                      <strong>About Property</strong>
+                      <p>{{property.description}}</p>
+                  </div>
+              </div>
+            </div>
+        </tab>
+        <tab heading="Address">
+          <div class="col-sm-12">
+            <h1>Address</h1>
+            <div class="heading">
+                <strong>{{property.address}}</strong><br/>
+                <strong>{{property.address2}}</strong><br/>
+                <strong>{{property.city}}</strong>
+            </div>
+        </div>
+
+        </tab>
+        <tab heading="Photos">
+          
+          <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+        </tab>
+        <tab heading="Contact">
+          <h1>Contact Detail</h1>
+          This should be restricted area and only registered user should be able to see seller contact details
+        </tab>
+      </tabset>
+    </div>
+  </div>
+</div>
+</div> -->
+
+ <!-- <body> -->
+    <!-- <div class="container">
+      <div class="row">
+        
+          <div class="wrapper">
+            <div class="overviewInfo">
+              <div class="actions">
+                <div class="backbutton ">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.02698 11.9929L5.26242 16.2426L6.67902 14.8308L4.85766 13.0033L22.9731 13.0012L22.9728 11.0012L4.85309 11.0033L6.6886 9.17398L5.27677 7.75739L1.02698 11.9929Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+
+              
+                
+            
+
+                <div class="cartbutton neurobutton"> 
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z" fill="currentColor"/>
+                    <path d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z" fill="currentColor"/>
+                    <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="currentColor"/>
+                  </svg>
+                </div>
+              </div>
+              
+              <div class="productinfo">
+               
+                <div class="grouptext">
+                   <h3>PLATFORM</h3>
+                   <p>PS5</p>
+                </div>
+                <div class="grouptext">
+                   <h3>RELEASE</h3>
+                   <p>Fall 2020</p>
+                </div>
+                <div class="grouptext">
+                   <h3>PRICE</h3>
+                   <p>$50</p>
+                </div>
+                <div class="productImage">
+                  <img src="https://i.imgur.com/ckSgzLQ.png" alt="product: ps5 controller image">
+                </div>
+              </div>
+               
+            </div> 
+            
+          
+            
+            <div class="productSpecifications">
+              <div class="checkoutButton">
+                <div class="priceTag">
+                  <span>&#8377;</span>{{property.price}}
+                </div>
+                
+                <button class="preorder">
+                  <p>PreBook</p>
+                  <div class="buttonaction">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </button> 
+              </div>
+            </div>
+
+            
+          </div>
+        
+
+       
+
+       </div>
+      
+      
+    </div> -->
+  
+    <body>
+      
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-12 col-lg-11 col-xl-10">
+                <div class="card d-flex mx-auto my-5">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12 left-grid p-5">
+                            <div class="row mb-5 m-3 productImage"> 
+                              
+                              <img *ngIf="property.image" class="card-img-top" src="assets/images/{{property.image}}.jpg">
+                              <img *ngIf="!property.image" class="card-img-top" src="assets/images/house_default.jpg">
+                            </div> 
+                            
+                          
+                            <div class="row justify-content-center">
+                                <div class="w-75 mx-md-5 mx-1 mx-sm-2 mb-5 mt-4 px-sm-5 px-md-2 px-xl-1 px-2">
+                                    <h1 class="wlcm">{{property.name}}</h1>
+                                    <span class="grouptext">{{property.bhk}} BHK</span><br>
+                                    <span class="grouptext">{{property.propType}}</span>
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                            <div class="productSpecifications">
+                              <div class="checkoutButton">
+                                <div class="priceTag">
+                                  <span>&#8377;</span>{{property.price}}
+                                </div>
+                                
+                                <button class="preorder">
+                                  <p>PreBook</p>
+                                  <div class="buttonaction">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z" fill="currentColor"/>
+                                    </svg>
+                                  </div>
+                                </button> 
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12 col-xs-12 c2 px-5 pb-5">
+                            <div class="row">
+                               
+                                <div  class="mt-5">
+                                <div class="tab-panel">
+                                  <tabset type="pills" class="m-3">
+                                  
+                                    <!--Basic Information-->
+                                    <tab heading="Overview" class="nav-link grouptext">
+                                      <h1>Overview</h1>
+                                        <div class="form-group col-12">
+                                          <div class="heading">
+                                            <h3>Project Name</h3>
+                                            <p>{{property.name}}</p>
+                                          </div>
+                                        </div>
+      
+                                        <div class="form-group col-12">
+                                          <div class="heading">
+                                            <h3>Floor Number</h3>
+                                            <p>{{property.floorNo}}</p>
+                                          </div>
+                                          
+                                        </div>
+      
+                                        <div class="form-group col-12">
+                                          <div class="heading">
+                                            <h3>Age of Property</h3>
+                                            <p>{{property.AOP}}</p>
+                                          </div>
+                                         
+                                        </div>
+      
+                                        <div class="form-group col-12">
+                                          <div class="heading">
+                                            <h3>Posession</h3>
+                                            <p>{{property.possessionOn}}</p>
+                                          </div>
+                                         
+                                        </div>
+                                      
+                                        <div class="form-group col-12">
+                                          <div class="heading">
+                                            <h3>Main Entrance</h3>
+                                            <p>{{property.mainEntrance}}</p>
+                                          </div>
+                                        </div>
+                                        
+                                    
+                                        <div class="form-group col-12">
+                                          <div class="heading">
+                                            <h3>Gated Community</h3>
+                                            <p>{{property.gated}}</p>
+                                          </div>
+                                        </div>
+  
+                                        <div class="form-group col-12">
+                                          <div class="heading">
+                                            <h3>Security Deposit</h3>
+                                            <p>{{property.security}}</p>
+                                          </div>
+                                          <div class="heading">
+                                            <h3>Maintenance</h3>
+                                            <p>{{property.maintenance}}</p>
+                                          </div>
+                                          <div class="heading">
+                                            <h3>About Property</h3>
+                                            <p>{{property.description}}</p>
+                                        </div>
+                                        </div>
+                                       
+                                      
+                                      
+                                      
+                                     
+                                    </tab>
+      
+                                    <!--contact tab-->
+                                    <tab heading="Contact" class="nav-link grouptext">
+                                          <h1>Contact Detail</h1>
+                                          <p>This should be restricted area and only registered user should be able to see seller contact details</p>
+                                    </tab>
+      
+                                    <!--Address information tabs-->
+                                    <tab heading="Address" class="nav-link grouptext">
+                                      <div class="col-sm-12">
+                                          <h1>Address</h1>
+                                          <div class="heading">
+                                              <h3>{{property.address}}</h3><br/>
+                                              <h3>{{property.address2}}</h3><br/>
+                                              <h3>{{property.city}}</h3>
+                                          </div>
+                                      </div>
+                                    
+      
+                                    </tab>
+      
+                                   
+      
+                                    <!--upload image tab-->
+                                    <tab heading="Images" class="nav-link">
+                                      <div class="col-12 mt-3 mr-3">
+                                        <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+                                      </div>
+                                    
+                                     
+                                    </tab>
+      
+                                  </tabset>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+    </body>
+   
+    
+      <!-- <div class="actions">
+        <div class="backbutton ">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.02698 11.9929L5.26242 16.2426L6.67902 14.8308L4.85766 13.0033L22.9731 13.0012L22.9728 11.0012L4.85309 11.0033L6.6886 9.17398L5.27677 7.75739L1.02698 11.9929Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+
+        <tabset class="member-tabset" type="pills">
+        
+          <tab heading="Overview" class="grouptext"> 
+            <h1>Overview</h1>
+            <div class="row">
+             
+                <div class="col-sm-6" >
+                    <div class="heading">
+                        <strong>Project Name</strong>
+                        <p>{{property.name}}</p>
+                    </div>
+  
+                    <div class="heading">
+                        <strong>Floor Number</strong>
+                        <p>{{property.floorNo}}</p>
+                    </div>
+  
+                    <div class="heading">
+                        <strong>Age of Property</strong>
+                        <p>{{property.AOP}}</p>
+                    </div>
+  
+                    <div class="heading">
+                        <strong>Posession</strong>
+                        <p>{{property.possessionOn}}</p>
+                    </div>
+                </div>
+  
+                <div class="col-sm-6">
+                    <div class="heading">
+                        <strong>Main Entrance</strong>
+                        <p>{{property.mainEntrance}}</p>
+                    </div>
+  
+                    <div class="heading">
+                        <strong>Gated Community</strong>
+                        <p>{{property.gated}}</p>
+                    </div>
+  
+                    <div class="heading">
+                        <strong>Security Deposit</strong>
+                        <p>{{property.security}}</p>
+                    </div>
+                    <div class="heading">
+                        <strong>Maintenance</strong>
+                        <p>{{property.maintenance}}</p>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="heading">
+                        <strong>About Property</strong>
+                        <p>{{property.description}}</p>
+                    </div>
+                </div>
+              </div>
+          </tab>
+          <tab heading="Address" class="grouptext">
+            <div class="col-sm-12">
+              <h1>Address</h1>
+              <div class="heading">
+                  <strong>{{property.address}}</strong><br/>
+                  <strong>{{property.address2}}</strong><br/>
+                  <strong>{{property.city}}</strong>
+              </div>
+          </div>
+  
+          </tab>
+          <tab heading="Photos" class="grouptext">
+            
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+          </tab>
+          <tab heading="Contact" class="grouptext">
+            <h1>Contact Detail</h1>
+            This should be restricted area and only registered user should be able to see seller contact details
+          </tab>
+        </tabset>
+
+        <div class="cartbutton neurobutton"> 
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z" fill="currentColor"/>
+            <path d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z" fill="currentColor"/>
+            <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="currentColor"/>
+          </svg>
+        </div>
+      </div> -->
+    
+   
+   
+  <!-- </body>  -->
+
+
+
+<!-- wrapper-->
+
+<!-- <div class="container-fluid">
+  <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-12 col-lg-11 col-xl-10">
+          <div class="card d-flex mx-auto my-5">
+              <div class="row">
+                  <div class="col-md-5 col-sm-12 col-xs-12 left-grid p-5">
+                      <div class="row mb-5 m-3"> 
+                        <img src="assets/images/addProp.png" class="image" alt="" />
+                       
+                      </div> 
+                      
+                    
+                      <div class="row justify-content-center">
+                          <div class="w-75 mx-md-5 mx-1 mx-sm-2 mb-5 mt-4 px-sm-5 px-md-2 px-xl-1 px-2">
+                              <h1 class="wlcm">Add Property</h1> 
+                              <span class="left-text">List Your property Details Here</span>
+                              <br>
+                              <span class="sp1"> 
+                                <span class="px-3 mx-1 bg-danger rounded-pill"></span> 
+                                <span class="mx-1 px-1 rounded-circle"></span>
+                                <span class="mx-1 px-1 rounded-circle"></span> 
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-7 col-sm-12 col-xs-12 c2 px-5 pb-5">
+                      <div class="row">
+                        
+                          <form class="px-3 pb-2">
+                          <div class="tab-panel">
+                            <tabset type="pills">
+                            
+                             
+                              <tab heading="Overview">
+                                <h1>Overview</h1>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="heading">
+                                            <strong>Project Name</strong>
+                                            <p>{{property.name}}</p>
+                                        </div>
+                      
+                                        <div class="heading">
+                                            <strong>Floor Number</strong>
+                                            <p>{{property.floorNo}}</p>
+                                        </div>
+                      
+                                        <div class="heading">
+                                            <strong>Age of Property</strong>
+                                            <p>{{property.AOP}}</p>
+                                        </div>
+                      
+                                        <div class="heading">
+                                            <strong>Posession</strong>
+                                            <p>{{property.possessionOn}}</p>
+                                        </div>
+                                    </div>
+                      
+                                    <div class="col-sm-6">
+                                        <div class="heading">
+                                            <strong>Main Entrance</strong>
+                                            <p>{{property.mainEntrance}}</p>
+                                        </div>
+                      
+                                        <div class="heading">
+                                            <strong>Gated Community</strong>
+                                            <p>{{property.gated}}</p>
+                                        </div>
+                      
+                                        <div class="heading">
+                                            <strong>Security Deposit</strong>
+                                            <p>{{property.security}}</p>
+                                        </div>
+                                        <div class="heading">
+                                            <strong>Maintenance</strong>
+                                            <p>{{property.maintenance}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="heading">
+                                            <strong>About Property</strong>
+                                            <p>{{property.description}}</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </tab>
+
+                              
+                              <tab heading="Photos">
+                    
+                                <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+                              </tab>
+
+                             
+                              <tab heading="Address">
+                                <div class="col-sm-12">
+                                  <h1>Address</h1>
+                                  <div class="heading">
+                                      <strong>{{property.address}}</strong><br/>
+                                      <strong>{{property.address2}}</strong><br/>
+                                      <strong>{{property.city}}</strong>
+                                  </div>
+                              </div>
+                      
+                              </tab>
+
+                             
+                              <tab heading="Contact">
+                                <h1>Contact Detail</h1>
+                                This should be restricted area and only registered user should be able to see seller contact details
+                              </tab>
+
+                              
+                             
+
+                            </tabset>
+                          </div>
+                        </form>
+                      </div>
+                    
+                    
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+</div> -->
+
+

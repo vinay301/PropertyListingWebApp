@@ -1,0 +1,121 @@
+header{
+    width:100%;
+    height: 100vh;
+    /* background-color:black; */
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    /* background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%); */
+    /* background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%); */
+    /* background: url('/assets/images/bg.png'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color:  */
+}
+.header{
+   
+    width:100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo img {
+    width:250px;
+    height:50px;
+    padding-left: 60px;
+}
+.header nav{
+    width:450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+.headerbtn{
+    margin-right: 60px;
+}
+.header button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color:#fff;
+    border: none;
+    background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
+    border-radius: 10px;
+    transition: all 300ms ease-in;
+}
+
+.header button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+main{
+    width:100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+figure img{
+    /* width:590px;
+   margin-top: -120px;
+   margin-right: 50px; */
+   width: 30rem;
+   height: 35rem;
+   margin-top: -85px;
+   margin-right: 50px;
+   overflow: hidden;
+   border-radius: 15rem 15rem 0 0;
+   /* border: 8px solid rgba(255, 255, 255, 0.12); */
+  
+}
+
+main .left-part{
+    margin-left: 100px;
+}
+.left-part h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+   
+
+}
+/* .>h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  } */
+
+nav a:hover{
+  
+    cursor: pointer;
+}
+span{
+    color:rgb(140,139,139);
+    font-size: 0.9rem;
+}
+a, h1{
+    color: whitesmoke !important;
+}
+
+.white-gradient{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: rgba(255, 255, 255, 0.522);
+    filter: blur(100px);
+    border-radius: 100px;
+  }
+
+  .logo img{
+    height:270px !important;
+  }
+
+  .input-group-prepend{
+    cursor: pointer;
+  }

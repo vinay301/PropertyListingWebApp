@@ -1,0 +1,132 @@
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!--customize navbar-->
+  <body >
+    <header >
+        <div class="header">
+            <div class="logo">
+                <!-- <a routerLink="" class="container-fluid" style="text-decoration: none; ">Housy</a> -->
+                <a routerLink=""><img class="navbarLogo"src="./assets/images/feelshomelogo.png" alt=""></a>
+            </div>
+            <nav>
+                <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/add-property">Buy</a>
+                <a routerLinkActive="active" routerLink="/rent-property">Rent</a>
+                <a routerLinkActive="active" routerLink="/add-property">List Property (Free)</a>
+                <a *ngIf="!loggedIn()" routerLinkActive="active" routerLink="user/login">Login</a>
+                <a *ngIf="!loggedIn()" routerLinkActive="active" routerLink="user/register">Register</a>
+                <!-- <a *ngIf="loggedIn()" (click)="onLogout()">Logout</a> -->
+
+                <!--Dispalying logged in user's name and additional user's functionalities-->
+                <div *ngIf="loggedIn()" class="dropdown mr-5" dropdown>
+                  <a href="#" class="dropdown-toggle text-light" dropdownToggle (click)="false">
+                      Welcome {{loggedinUser}}
+                  </a>
+                  <div class="dropdown-menu" *dropdownMenu>
+                      <a href="#"class="dropdown-item text-bg-dark">
+                        <i class="fas fa-tachometer-alt"></i> View Dashboard</a>
+                      <a href="#" class="dropdown-item text-bg-dark">
+                        <i class="far fa-user-circle"></i> My Profile</a>
+                      <a href="#" class="dropdown-item text-bg-dark">
+                        <i class="fas fa-key"></i> Change Password</a>
+                      <a (click)='onLogout()' class="dropdown-item text-bg-dark">
+                        <i class="fas fa-sign-out-alt"></i> Logout</a>
+                  </div>
+                </div>
+
+            </nav>
+            <div class="headerbtn">
+                <button type="button">ContactUs</button>
+            </div>
+        </div>
+        <main>
+            <section class="left-part ">
+              <h1>Discover</h1>
+              <h1>Most Suitable</h1>
+              <h1>House For You</h1>
+
+              <span>Find a variety of properties that suit you very easilty</span>
+              <br>
+              <span>Forget all difficulties in finding a residence for you</span>
+              <section class="text-white mt-3">
+                <!-- currentDate : {{today |date : 'medium'}} -->
+                <form>
+                  <!-- <div class="row gx-2 gx-md-3 mb-7">
+                    <div class="col-md-4 mb-2 mb-md-0"> -->
+                      <label class="form-label visually-hidden" for="searchJobCareers">Search City</label>
+              
+                      <!-- Form -->
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-prepend input-group-text" (click)="onCityFilter()">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" class="form-control form-control-lg" id="searchJobCareers" 
+                        placeholder="Search City" aria-label="Search job" [(ngModel)]="city" [ngModelOptions]="{standalone: true}">
+                        <span class="input-group-prepend input-group-text" (click)="onCityFilterClear()">
+                          <i class="fa-solid fa-eraser"></i>
+                        </span>
+                      </div>
+                      <!-- End Form -->
+                    <!-- </div>
+                    </div> -->
+                    
+                  </form>
+                  
+                  <div class="input-group input-group-merge">
+                    <div class="mt-2 mb-sm-0 me-sm-2">
+                      <select class="form-select form-select-sm" [(ngModel)]="sortByParam">
+                        <option value="price" selected>Price</option>
+                        <option value="city">City</option>
+                      </select>
+                    </div>
+                    <span class="input-group-prepend input-group-text mt-2" (click)="onSortDirection()">
+                     
+                      <i *ngIf="sortDirection === 'asc'" class="fa-solid fa-arrow-up-a-z"></i>
+                      <i *ngIf="sortDirection === 'desc'" class="fa-solid fa-arrow-down-z-a"></i>
+                    </span>
+                  </div>
+                  
+                    <!-- End Col -->
+              </section>
+            </section>
+           
+           
+            <section class="right-part">
+              <figure>
+                <img src="/assets/images/Realtor-amico.png" alt="">
+              </figure>
+            </section>
+        </main>
+    </header>
+
+    <app-property-list [searchCity]="searchCity" [sortByParam]="sortByParam" [sortDirection]="sortDirection"></app-property-list>
+  </body>

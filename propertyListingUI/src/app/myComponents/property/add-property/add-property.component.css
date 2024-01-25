@@ -1,0 +1,121 @@
+.photo-control{
+    min-height: 300px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px dashed #00264D;
+    margin: 5px;
+
+}
+
+/*
+New Form CSS
+*/
+
+
+.card{
+    padding: 0px 15px;
+    border-radius: 20px
+}
+
+
+.left-grid{
+   
+    background-color: #00264D;
+    border-radius: 20px
+}
+a{
+    margin: 0px;
+    font-size: 13px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    color: whitesmoke;
+    /* background-color: #fff2f1; */
+    background-color: #02386E;
+}
+.nav-link{
+    padding: 1rem 1.4rem;
+    margin: 0rem 0.7rem
+}
+.ac{
+    font-weight: bold;
+    /* color: #e0726c; */
+    color:#00264D;
+    font-size: 12px
+}
+input, button{
+    width: 98.5%;
+    /* background-color: #fff2f1; */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 8px 17px;
+    font-size:13px;
+    border: 1px solid #f5f0ef;
+    color: #dccece
+}
+input:hover{
+    text-decoration: none
+}
+.bt{
+    /* background-color: #ff4133; */
+    background-color: #00264D; 
+    /* border: 1px solid rgb(300, 200, 200); */
+    border: 1px solid whitesmoke;
+}
+button:hover{
+    background-color: #02386E;
+    text-transform: capitalize;
+    color: #f0f0f0 !important;
+}
+form{
+    margin-top: 70px
+}
+form >*{
+    margin: 10px 0px
+}
+#backBtn,#saveBtn,#cancelBtn{
+    margin-top: 10px;
+    /* margin-left: 50px; */
+   
+}
+#nextBtn{
+    text-align: center;
+    /* margin-left: 50px; */
+    margin-top: 10px;
+    
+}
+
+.wlcm{
+    font-size: 30px;
+    text-transform: capitalize;
+    color:whitesmoke;
+}
+.sp1{
+    font-size: 7px;
+    
+}
+.sp1 >span{
+    background-color: #f0c3be;
+   
+}
+
+.left-text{
+    color:rgb(140,139,139);
+    font-size: 0.9rem;
+}
+
+.previewCard{
+    margin-left: 30px !important;
+}
+
+/*Tabs CSS */
+
+
+
+
+        
+      
+    
+  

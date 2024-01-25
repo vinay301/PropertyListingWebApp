@@ -1,0 +1,55 @@
+       <div class="container-fluid mt-4">
+        <div class="row">
+         
+            <div class="card" style="width: 18rem;">
+
+              <div class="card-img-wrapper">
+                <img *ngIf="property.image" src="/assets/images/{{property.image}}.jpg" class="card-img-top mt-2" alt="house_default">
+                <img *ngIf="!property.image" src="/assets/images/house_default.jpg" class="card-img-top mt-2" alt="house_default">
+
+                <!--Edit details and contact us Icons-->
+                <ul *ngIf="!hideIcons" class="list-inline text-center member-icons animate">
+                  <li class="list-inline-item">
+                    <button class="btn btn-primary"><i class="fa-regular fa-pen-to-square"></i></button>
+                  </li>
+                  <li class="list-inline-item">
+                    <button class="btn btn-primary"><i class="fa-regular fa-address-book"></i></button>
+                  </li>
+                </ul>
+              </div>
+             
+    
+              <div class="card-body">
+                <h1 class="mb-0"> {{property.bhk}} BHK {{property.propType}} </h1>
+
+                  in {{property.name}}
+                  <!--if property name exists then only put comma(,), if not then display city only-->
+                  <span *ngIf="property.name">,</span>
+                  {{property.city}}
+
+                  <h6  class="mt-2">{{property.furnishType}}
+                    <!--if furnish type == unfurnished, then do not type 'Furnished' from view template-->
+                  <span *ngIf="property.furnishType !== 'Unfurnished'">Furnished</span>
+                  <span *ngIf="property.RTM; else showRTM" > | Ready to Move</span>
+                  <ng-template #showRTM> | On Possession</ng-template>
+                
+                  </h6>
+
+                  <hr class="mt-0 mb-2">
+
+                  <h6 class="mb-3">
+                    Price: <span class="font-highlight">{{property.price}} INR.</span> |
+                    Area:  <span class="font-highlight">{{property.builtArea}} Sq Ft </span> 
+                    
+                  </h6>
+                              
+                  <!-- <h3 class="text">{{property.name}}</h3>
+                  <p class="text">{{property.propType}}</p>
+                  <p class="text">{{property.price}}</p>             -->
+                <a routerLink="/property-details/{{property.id}}" class="btn ">Explore <span>&rarr;</span></a>
+              </div>
+            </div>
+        </div>
+       </div>
+      
+   

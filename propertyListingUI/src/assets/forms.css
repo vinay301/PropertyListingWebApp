@@ -1,0 +1,36 @@
+/* [.ng-invalid] [.ng-touched] is a built-in angular class that is created by angular itself at runtime 
+    [.ng-invalid] tells whether the input field is valid or not
+    [.ng-touched] tells whether the input feild is clicked or not
+
+*/
+.ng-invalid .ng-touched{
+    border-color: red;
+}
+
+/* this particular CSS works, when an input field is left invalid then it turns the border of input field to red
+*/
+.error-block{
+    color: red;
+}
+
+.btn-group > label[ng-reflect-btn-radio] {
+    border-radius: 44px;
+    padding: 0 15px;
+    line-height: 30px;
+  }
+
+  .card-header > h1, .card-header > h2, .card-header > h3 {
+    color: white;
+  }
+  
+  .card-header {
+    height: 42px;
+    padding: 4px 10px !important;
+    background-color: #00264D !important;
+    border-radius: 10px !important;
+  }
+  
+  .card-title {
+    
+    color: #0069d9;
+  }
